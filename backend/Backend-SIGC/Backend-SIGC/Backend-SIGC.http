@@ -1,0 +1,6 @@
+@Backend_SIGC_HostAddress = http://localhost:5272
+
+GET {{Backend_SIGC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,15 @@
+## Visual Studio / .NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Local secrets - keep appsettings.json as the committed base, ignore per-environment overrides
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
