@@ -1,0 +1,115 @@
+.login-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 32px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.login-form h1 {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.login-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.login-form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+.login-form input {
+  font: inherit;
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+.login-form .form-group small {
+  color: #e5484d;
+  font-size: 13px;
+}
+
+.login-form .form-error {
+  color: #e5484d;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.login-form button[type='submit'] {
+  font: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--accent);
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.login-form button[type='submit']:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.login-form button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-form p {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-form p a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 32px 20px;
+  }
+}
