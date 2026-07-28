@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {useForm} from '@tansack/react-form'
 import {Link, useNavigate} from '@tanstack/react-router'
-import {useAuth} from '../../hooks/auth/useAuth'
+import {useAuth} from '../../../auth/hooks/useAuth'
 
 export default function RegistroPage() {
     const {register} = useAuth()

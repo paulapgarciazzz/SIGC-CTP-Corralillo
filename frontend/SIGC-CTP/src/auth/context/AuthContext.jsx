@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react"
 import { AuthContext } from "./authContextProvider"
-import * as authService from "../../services/authService"
+import * as authService from '../../auth/services/authService'
 import { TOKEN_STORAGE_KEY } from "../../services/apiClient"
 
 export default function AuthContextProvider({ children }) {
